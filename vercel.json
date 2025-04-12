@@ -1,9 +1,6 @@
 {
   "functions": {
-    "app/api/analyze-cv/route.ts": {
-      "maxDuration": 100
-    },
-    "api/*.ts": {
+    "app/api/**/*": {
       "maxDuration": 100
     }
   }
