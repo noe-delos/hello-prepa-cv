@@ -6,7 +6,7 @@ import pdf from "pdf-parse";
 import { getOpenAIInstance, SYSTEM_PROMPT } from "@/lib/openai";
 import { CVType, AnalysisResult } from "@/lib/types";
 
-export const maxDuration = 100;
+export const maxDuration = 60;
 
 const extractTextFromPDF = async (buffer: Buffer): Promise<string> => {
   console.log("Starting PDF text extraction...");
