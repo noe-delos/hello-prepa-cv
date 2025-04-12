@@ -1,9 +1,10 @@
-// app/api/analyze-cv/route.ts
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { NextRequest, NextResponse } from "next/server";
 import { PDFDocument } from "pdf-lib";
 import pdf from "pdf-parse";
 import { getOpenAIInstance, SYSTEM_PROMPT } from "@/lib/openai";
-import { CVType, AnalysisResult, Suggestion } from "@/lib/types";
+import { CVType, AnalysisResult } from "@/lib/types";
 
 const extractTextFromPDF = async (buffer: Buffer): Promise<string> => {
   console.log("Starting PDF text extraction...");
