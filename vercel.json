@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "app/api/analyze-cv/route.ts": {
+      "maxDuration": 100
+    },
+    "api/*.ts": {
+      "maxDuration": 100
+    }
+  }
+}
